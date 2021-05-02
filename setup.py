@@ -10,7 +10,7 @@ INSTALL_REQUIRES = ["boto3==1.17.62", "click==7.1.2"]
 CLASSIFIERS = []
 
 ENTRY_POINTS = {
-    "console_scripts": ["dougs_valheim_server = dougs_valheim_server.cli:main"]
+    "console_scripts": ["dougs_valheim_server = dougs_valheim_server.cli:cli"]
 }
 
 setup(

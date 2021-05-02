@@ -2,20 +2,20 @@ import click
 
 
 @click.group()
-def main():
-    print("main")
+def cli():
+    print("cli")
 
 
-@main.command()
+@cli.command()
 def status():
     print("status")
 
 
-@main.command()
+@cli.command()
 def stop():
     print("stop")
 
 
-@main.command()
+@cli.command()
 def start():
     print("start")
