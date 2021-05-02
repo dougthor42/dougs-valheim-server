@@ -1,5 +1,7 @@
 import click
 
+from . import main
+
 
 @click.group()
 def cli():
@@ -9,6 +11,7 @@ def cli():
 @cli.command()
 def status():
     print("status")
+    main.get_status()
 
 
 @cli.command()
