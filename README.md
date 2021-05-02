@@ -16,9 +16,11 @@ pip install -e .
 
 Create `secrets.yml` in the repository root.
 
-```yaml
----
-foo: 'enter the secret that doug gave you personally.'
+```json
+{
+    "aws_access_key": "foo",
+    "aws_secret_access_key": "bar",
+}
 ```
 
 As this point you should be good to go.
