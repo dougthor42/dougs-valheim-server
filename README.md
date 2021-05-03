@@ -19,7 +19,7 @@ Create `secrets.yml` in the repository root.
 ```json
 {
     "aws_access_key": "foo",
-    "aws_secret_access_key": "bar",
+    "aws_secret_access_key": "bar"
 }
 ```
 
@@ -29,8 +29,6 @@ As this point you should be good to go.
 ## Usage
 
 (Note: the virtual environment made above must be active.)
-
-First, check the current status of the server:
 
 ```
 $ dougs_valheim_server status
