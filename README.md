@@ -19,7 +19,7 @@ Create `secrets.yml` in the repository root.
 ```json
 {
     "aws_access_key": "foo",
-    "aws_secret_access_key": "bar",
+    "aws_secret_access_key": "bar"
 }
 ```
 
