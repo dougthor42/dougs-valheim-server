@@ -26,6 +26,9 @@ BOTOCONFIG = Config(
     retries={"max_attempts": 10, "mode": "standard"},
 )
 
+# seconds
+START_TIMEOUT = 45
+
 
 def read_secrets(secrets_file: Union[str, Path] = SECRETS_FILE) -> Dict[str, str]:
     logger.debug(f"Reading secrets file '{secrets_file}'")
@@ -143,11 +146,11 @@ def start_instance(instance) -> None:
         print(f"Server is in the transition state '{status}'. Please try again later.")
         return
 
-    print("Starting server...")
+    print(f"Starting server. Timeout: {START_TIMEOUT}s...")
     instance.start()
 
     # Simple polling to check when the server comes up.
-    for _ in range(45):
+    for _ in range(START_TIMEOUT):
         status = get_status(instance)
         if status == "running":
             break
