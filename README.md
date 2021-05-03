@@ -3,7 +3,7 @@
 
 ## Installation
 
-Requires Python3.
+Requires Python3.6 or higher.
 
 ```shell
 git clone git@github.com/dougthor42/dougs-valheim-server.git
@@ -14,7 +14,7 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-Create `secrets.yml` in the repository root.
+Create `secrets.json` in the repository root.
 
 ```json
 {
@@ -31,6 +31,13 @@ As this point you should be good to go.
 (Note: the virtual environment made above must be active.)
 
 ```
+dougs_valheim_server --help
+```
+
+
+### Examples:
+
+```
 $ dougs_valheim_server status
 The server is UP with an IP address of: 33.99.24.590
 
@@ -39,12 +46,12 @@ Stopping server...
 Stopped
 
 $ dougs_valheim_server status
-The server is DOWN. Run `dougs_valheim_server start` to start it.
+The server is STOPPED. Run `dougs_valheim_server start` to start it.
 
 $ dougs_valheim_server start
 Starting server...
 The server has been started. IP address: 94.123.57.999
 
 $ dougs_valheim_server status
-The server is UP with an IP address of: 94.123.57.999
+The server is RUNNING with an IP address of: 94.123.57.999
 ```
