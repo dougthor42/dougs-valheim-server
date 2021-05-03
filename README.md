@@ -30,8 +30,6 @@ As this point you should be good to go.
 
 (Note: the virtual environment made above must be active.)
 
-First, check the current status of the server:
-
 ```
 $ dougs_valheim_server status
 The server is UP with an IP address of: 33.99.24.590
